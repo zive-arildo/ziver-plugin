@@ -78,8 +78,9 @@ Ziver itself does talk to its own service at `ziver.ziveit.com`, and this is
 all of what goes there:
 
 - **When you sign in**, the machine is registered: your account email, a
-  machine id, the machine's hostname as a label, its operating system and
-  architecture, and the Ziver version.
+  machine id that is a hash of the system's own identifier and never the
+  identifier itself, the machine's hostname as a label, its operating system
+  and architecture, and the Ziver version.
 - **Periodically after that**, a usage report: for each day and each kind of
   saving, how many times it ran and the token counts before and after.
 
@@ -88,9 +89,10 @@ transcripts. Two settings govern that, and both are off until you turn them
 on: uploading cost telemetry, and sending repository content to a cloud model
 for optimisation. `ziver status` prints their state on its `privacy` line.
 
-Usage records are kept so the dashboard can show history, and are not deleted
-on a schedule. What is collected, and how to have it removed, is in the
-privacy policy below.
+Account, machine and usage records are kept for as long as the account
+exists, and are deleted within thirty days of deleting it. You can disconnect
+a machine from the dashboard at any time, or run `ziver logout` on it. The
+privacy policy below is the full account, and it governs.
 
 ## Links
 
