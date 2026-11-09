@@ -4,7 +4,20 @@
   "description": "See how many tokens your Claude Code sessions spend, and cut them. Reports status, usage and where the savings came from.",
   "version": "0.1.0",
   "license": "Apache-2.0",
-  "homepage": "https://ziver.ziveit.com/",
+  "keywords": [
+    "tokens",
+    "token-usage",
+    "cost",
+    "context-window",
+    "usage",
+    "savings",
+    "claude-code"
+  ],
+  "homepage": "https://www.ziveit.com/ziver/",
+  "repository": "https://github.com/zive-arildo/ziver-plugin",
+  "supportUrl": "https://github.com/zive-arildo/ziver-plugin/issues",
+  "privacyPolicyUrl": "https://www.ziveit.com/ziver/privacy/",
+  "termsOfServiceUrl": "https://www.ziveit.com/ziver/terms/",
   "author": {
     "name": "ZiveIT",
     "url": "https://www.ziveit.com/"
