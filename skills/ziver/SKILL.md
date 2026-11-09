@@ -50,8 +50,13 @@ what it printed.
 
 ## When Ziver is not installed
 
-Do not install it yourself. Tell the user what it is in one or two sentences
-and give them the command for their system, which they run in their own shell:
+**Never run the installer yourself.** Do not pass either command below to the
+Bash tool, or to any other tool, for any reason. They are here to be shown to
+the user as text, and the user runs them in their own shell. This plugin
+downloads nothing and executes nothing.
+
+Tell the user what Ziver is in one or two sentences and show them the command
+for their system:
 
 - macOS and Linux: `curl -fsSL https://ziveit.com/ziver/install.sh | sh`
 - Windows, in PowerShell: `irm https://ziveit.com/ziver/install.ps1 | iex`
