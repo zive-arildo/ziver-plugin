@@ -69,12 +69,34 @@ There is a free tier. Usage is at <https://ziver.ziveit.com/>.
   leaving file contents verbatim. Off unless you turn it on, and
   `ziver setup claude --no-proxy` keeps it off.
 
-Telemetry upload is off by default, and your code is not sent to the cloud.
-`ziver status` shows both.
+## What leaves your machine
+
+This plugin has no code of its own and makes no network request. It runs
+Ziver's commands and reports what they print.
+
+Ziver itself does talk to its own service at `ziver.ziveit.com`, and this is
+all of what goes there:
+
+- **When you sign in**, the machine is registered: your account email, a
+  machine id, the machine's hostname as a label, its operating system and
+  architecture, and the Ziver version.
+- **Periodically after that**, a usage report: for each day and each kind of
+  saving, how many times it ran and the token counts before and after.
+
+It does not send your source code, your file names, your prompts or your
+transcripts. Two settings govern that, and both are off until you turn them
+on: uploading cost telemetry, and sending repository content to a cloud model
+for optimisation. `ziver status` prints their state on its `privacy` line.
+
+Usage records are kept so the dashboard can show history, and are not deleted
+on a schedule. What is collected, and how to have it removed, is in the
+privacy policy below.
 
 ## Links
 
 - Dashboard and plans: <https://ziver.ziveit.com/>
+- Privacy policy: <https://www.ziveit.com/ziver/privacy/>
+- Terms: <https://www.ziveit.com/ziver/terms/>
 - ZiveIT: <https://www.ziveit.com/>
 
 ## Licence
