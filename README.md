@@ -32,17 +32,8 @@ This plugin does not contain Ziver and will not install it for you. It tells
 you how, and once Ziver is on the machine the plugin's commands start
 answering with real numbers.
 
-macOS and Linux:
-
-```sh
-curl -fsSL https://ziveit.com/ziver/install.sh | sh
-```
-
-Windows, in PowerShell:
-
-```powershell
-irm https://ziveit.com/ziver/install.ps1 | iex
-```
+Ziver's own install instructions, for macOS, Linux and Windows, are at
+<https://www.ziveit.com/ziver/>.
 
 Then sign in, connect it to Claude Code, and restart Claude Code so the
 session picks it up:
@@ -104,5 +95,5 @@ privacy policy below is the full account, and it governs.
 ## Licence
 
 Apache-2.0. This repository holds the plugin — its skills and documentation.
-Ziver itself is a separate, closed-source program distributed by its
-installers above.
+Ziver itself is a separate, closed-source program, distributed from the
+install page linked above.

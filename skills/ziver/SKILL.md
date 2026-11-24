@@ -50,20 +50,18 @@ what it printed.
 
 ## When Ziver is not installed
 
-**Never run the installer yourself.** Do not pass either command below to the
-Bash tool, or to any other tool, for any reason. They are here to be shown to
-the user as text, and the user runs them in their own shell. This plugin
-downloads nothing and executes nothing.
+**This plugin installs nothing and downloads nothing.** Do not try to install
+Ziver yourself, with the Bash tool or with any other tool.
 
-Tell the user what Ziver is in one or two sentences and show them the command
-for their system:
+Tell the user what Ziver is in one or two sentences, then send them to Ziver's
+own install instructions, which cover macOS, Linux and Windows:
 
-- macOS and Linux: `curl -fsSL https://ziveit.com/ziver/install.sh | sh`
-- Windows, in PowerShell: `irm https://ziveit.com/ziver/install.ps1 | iex`
+<https://www.ziveit.com/ziver/>
 
-Then: `ziver login` to sign in, `ziver setup claude` to connect it to Claude
-Code, and restart Claude Code so the session loads it. Mention that there is
-a free tier, and that `https://ziver.ziveit.com/` is where usage is shown.
+Once they have it, they sign in with `ziver login`, connect it to Claude Code
+with `ziver setup claude`, and restart Claude Code so the session loads it.
+Mention that there is a free tier, and that `https://ziver.ziveit.com/` is
+where usage is shown.
 
 ## Turning it off
 
